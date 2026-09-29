@@ -61,10 +61,11 @@ pipeline {
         stage('Deploy to EKS') {
             steps {
                 sh '''
-                kubectl set image deployment/flask-deployment flask-container=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-                kubectl rollout restart deployment/flask-deployment
+                kubectl set image deployment/flask-app flask-container=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+                kubectl rollout restart deployment/flask-app
                 '''
             }
         }
     }
 }
+
