@@ -1,0 +1,10 @@
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+venv/
+__pycache__/
+*.pem
+*.key
+.DS_Store
+Thumbs.db
