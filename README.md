@@ -44,7 +44,7 @@ Application
 •	Flask
 
 ## Repository Structure
-
+¬¬¬
 eks-cicd-project/
 │
 ├── app/
@@ -64,6 +64,7 @@ eks-cicd-project/
 │       └── terraform.tfstate (generated after apply)
 │
 └── Jenkinsfile
+¬¬¬
 
 ## Pipeline Workflow
 
